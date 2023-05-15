@@ -9,6 +9,7 @@ namespace Day6StackAndQueue
     public class Queue
     {
         Node head = null;
+        //Add Element in Queue....
         public void Enqueue(int value)
         {
             Node node = new Node(value);
@@ -28,9 +29,21 @@ namespace Day6StackAndQueue
 
             }
             //Console.WriteLine(node.data);
-
         }
 
+        public void Peek()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Queue is Empty");
+            }
+            else
+            {
+                Node temp = head;
+                Console.WriteLine($"Top Element of the Queue is : {head.data}");
+            }
+        }
+        // Delete Element in Queue.....
         public void Dequeue()
         {
             if (head == null)
@@ -40,7 +53,7 @@ namespace Day6StackAndQueue
             else
             {
                 this.head = this.head.next;
-                Console.WriteLine("first element removed!!");
+                Console.WriteLine("first element removed : ");
             }
 
         }
