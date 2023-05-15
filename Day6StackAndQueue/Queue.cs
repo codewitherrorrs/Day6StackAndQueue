@@ -31,7 +31,7 @@ namespace Day6StackAndQueue
 
         }
 
-        public void DequeueMethod()
+        public void Dequeue()
         {
             if (head == null)
             {

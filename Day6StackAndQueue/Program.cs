@@ -10,6 +10,8 @@
             queue.Enqueue(10);
             queue.Enqueue(40);
             queue.Enqueue(54);
+            //Remove the Element from Queue......
+            queue.Dequeue();
             //For Showing / Display the queue.
             queue.Display();
             Console.ReadKey();
